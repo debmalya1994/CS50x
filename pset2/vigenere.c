@@ -5,6 +5,10 @@
  
 int main(int argc, string argv[])
 {
+    if(argc == 1){
+         printf("Usage: ./vigenere k\n");
+               return 1;
+               }
       char *k=argv[1];
               for(int i=0;i<strlen(k);i++)
            {
